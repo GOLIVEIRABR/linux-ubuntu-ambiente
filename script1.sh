@@ -16,6 +16,7 @@ cd /home/$USER/Downloads/Programas
 ##Baixando .debs
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://github.com/egoist/devdocs-app/releases/download/v0.7.1/DevDocs_0.7.1_amd64.deb
+wget https://repo.steampowered.com/steam/archive/precise/steam_latest.deb
 ##Instalando .debs
 sudo dpkg -i *.deb
 
