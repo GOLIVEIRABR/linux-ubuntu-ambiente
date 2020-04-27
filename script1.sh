@@ -13,6 +13,9 @@ sudo snap install gimp --classic
 mkdir /home/$USER/Downloads/Programas
 cd /home/$USER/Downloads/Programas
 
+##Baixando EXE
+wget https://download.mql5.com/cdn/web/6400/mt5/clear5setup.exe
+
 ##Baixando .debs
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://github.com/egoist/devdocs-app/releases/download/v0.7.1/DevDocs_0.7.1_amd64.deb
