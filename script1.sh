@@ -143,8 +143,8 @@ echo '{
     }    
     }
     }' >> settings.json
-cd ~/
-cd Documentos
+cd ~/Documentos
+
 echo 'Instalar as seguintes extensões no VSCODE:
 
 - Dracula Official
