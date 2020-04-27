@@ -2,6 +2,11 @@
 ##Instalando Snaps
 sudo apt-get update
 sudo apt-get upgrade
+
+##Instalando cRUL
+sudo apt-get update
+sudo apt install curl
+
 sudo snap install code --classic
 sudo snap install insomnia --classic
 sudo snap install dbeaver-ce --classic
@@ -139,10 +144,6 @@ echo 'Instalar as seguintes extensões no VSCODE:
 - vscode-styled-components' >> Leiam-ME.txt
 
 cd ~/
-
-##Instalando cRUL
-sudo apt-get update
-sudo apt install curl
 
 ##Instalando Zsh
 cd /etc
