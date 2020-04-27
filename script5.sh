@@ -9,7 +9,7 @@ npm -v
 echo "==========INSTALANDO NVM========"
 ##Instalação do NVM
 sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-sudo sed -i '1 i\export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"\n[ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" # This loads nvm' .zshrc
+sudo sed -i '1 i\export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"\n[ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" # This loads nvm' ~/.zshrc
 
 echo "==========INSTALANDO YARN========"
 ##Instalação do Yarn
@@ -31,7 +31,7 @@ sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 
-docker version
+sudo docker version
 
 echo "========INSTALANDO JDK 8=========="
 ##Instalação do JDK 8 (pasta padrão)
@@ -42,7 +42,7 @@ java -version
 
 echo "==========INSTALANDO LIBS GRAFICAS========="
 ##Instalação de Libs Gráficas
-sudo apt-get install gcc-multilib lib32z1 lib32stdc++6
+sudo apt-get install gcc-multilib lib32z1 lib32stdc++6 libcanberra-gtk-module
 
 echo "=========PREPARANDO ANDROID STUDIO=========="
 ##Preparativos para Android Studio
@@ -57,4 +57,5 @@ wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/3.6.3.0/android-
 tar -xvzf android-studio-ide-192.6392135-linux.tar.gz -C ~/
 cd ~/
 sudo sed -i '1 i\export PATH=$PATH:~/android-studio/bin' .zshrc
-studio.sh
+
+echo "=======EXECUÇÃO TERMINADA, INICIE A CONFIGURAÇÃO MANUAL DO ANDROID STUDIO========"
