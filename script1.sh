@@ -59,6 +59,7 @@ git config --global user.name "Geazi Oliveira" && git config --global user.email
 echo "==========CONFIGURANDO VSCODE=========="
 ###########COnfigurações de Desenvolvimento########
 ##Configurando o VSCode
+sudo mkdir -p $home/.config/Code/User/
 cd $HOME/.config/Code/User/
 echo '{
 
