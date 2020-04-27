@@ -16,7 +16,17 @@ sudo apt update && sudo apt install yarn
 yarn -v
 
 ##Instalação da CLI do React APP
-sudo yarn global add create-react-native-app
+sudo yarn global add create-react-app
+
+##Instalação do Docker
+sudo apt update
+sudo apt remove docker docker-engine docker.io
+sudo apt install docker.io
+
+sudo systemctl start docker
+sudo systemctl enable docker
+
+docker version
 
 ##Instalação do JDK 8 (pasta padrão)
 sudo add-apt-repository ppa:openjdk-r/ppa
