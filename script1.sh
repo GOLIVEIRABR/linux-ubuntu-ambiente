@@ -39,6 +39,103 @@ sudo apt update && sudo apt install git
 git config --global user.name "Geazi Oliveira" && git config --global user.email "geazioliveira@hotmail.com"
 
 ###########COnfigurações de Desenvolvimento########
+##Configurando o VSCode
+cd $HOME/.config/Code/User/
+echo '{
+
+    "workbench.colorTheme": "Dracula",
+    
+    "terminal.integrated.fontSize": 14,
+    
+    "workbench.iconTheme": "material-icon-theme",
+    
+    "workbench.startupEditor": "newUntitledFile",
+    
+    "editor.tabSize": 2,
+    
+    "editor.fontSize": 14,
+    
+    "editor.lineHeight": 21,
+    
+    "editor.fontFamily": "Fira Code",
+    
+    "editor.fontLigatures": true,
+    
+    "explorer.compactFolders": false,
+    
+    "editor.renderLineHighlight": "gutter",
+    
+    "workbench.editor.labelFormat": "short",
+    
+    "extensions.ignoreRecommendations": true,
+    
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    
+    "breadcrumbs.enabled": true,
+    
+    "editor.parameterHints.enabled": true,
+    
+    "explorer.confirmDragAndDrop": false,
+    
+    "explorer.confirmDelete": false,
+    
+    "editor.rulers": [ 80, 120],
+    
+    "emmet.syntaxProfiles":{ "javascript": "jsx"},
+    
+    "emmet.includeLanguages": { "javascript": "javascriptreact"},
+    
+    "[javascript]": {
+    
+    "editor.codeActionsOnSave": {
+    
+    "source.fixAll.eslint" : true,
+    }
+    },
+    
+    "[javascriptreact]": {
+    
+    "editor.codeActionsOnSave": {
+    
+    "source.fixAll.eslint": true,
+    
+    }
+    
+    },
+    
+    "[typescript]": {
+    
+    "editor.codeActionsOnSave": {
+    
+    "source.fixAll.eslint": true,
+    
+    }
+    
+    },
+    
+    "[typescriptreact]": {
+    
+    "editor.codeActionsOnSave": {
+    
+    "source.fixAll.eslint": true,
+    
+    }    
+    }
+    }' >> settings.json
+cd ~/
+cd Documentos
+echo 'Instalar as seguintes extensões no VSCODE:
+
+- Dracula Official
+- EditorConfig for VS Code
+- ESLint
+- Material Icon Theme
+- vscode-styled-components' >> Leiam-ME.txt
+
+cd ~/
+
 ##Instalando cRUL
 sudo apt-get update
 sudo apt install curl
