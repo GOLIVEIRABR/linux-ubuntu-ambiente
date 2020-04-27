@@ -144,7 +144,6 @@ sudo apt install curl
 cd /etc
 sudo apt install zsh
 sudo sed -i 's+/geazi:/bin/bash+/geazi:/bin/zsh+g' passwd
-zsh
 
 ##Reiniciando o Sistema
 sudo reboot
