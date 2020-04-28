@@ -2,12 +2,12 @@
 ZSH_CUSTOM="/home/geazi/.oh-my-zsh/custom"
 echo "=========INSTALANDO DRACULA PARA TERMINAL========"
 ##Instalando Drácula para terminal
-sudo apt-get install dconf-cli
+sudo apt-get install dconf-cli -y
 
 echo "=======INSTALANDO FONT FIRACODE==========="
 ##Instalando Fonte FiraCode
-sudo apt-get update
-sudo apt install fonts-firacode
+sudo apt-get update -y
+sudo apt install fonts-firacode -y
 
 echo "=========INSTALANDO TEMA SPACESHIP NO ZSH==========="
 ##Instalando tema SpaceShip no Oh My ZSH

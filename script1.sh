@@ -1,13 +1,13 @@
 #!/bin/bash
 ##Instalando cRUL
 echo "=========INSTALANDO CURL========="
-sudo apt-get update
-sudo apt install curl
+sudo apt-get update -y
+sudo apt install curl -y
 
 echo "========INSTALANDO SNAPS======="
 ##Instalando Snaps
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get update -y
+sudo apt-get upgrade -y
 
 sudo snap install code --classic
 sudo snap install insomnia --classic
@@ -36,24 +36,24 @@ sudo dpkg -i *.deb
 
 echo "===========INSTALANDO APT-GET========"
 ##Instalando Via apt-get
-sudo apt-get update
-sudo apt-get install deepin-screenshot
+sudo apt-get update -y
+sudo apt-get install deepin-screenshot -y
 
-sudo add-apt-repository ppa:peek-developers/stable
-sudo apt update
-sudo apt-get install peek
+sudo add-apt-repository ppa:peek-developers/stable -y
+sudo apt update -y
+sudo apt-get install peek -y
 
 echo "===========INSTALANDO WINE==========="
 ##Instalando Wine
 sudo dpkg --add-architecture i386
 wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
-sudo apt install --install-recommends winehq-stable
+sudo apt install --install-recommends winehq-stable 
 
 echo "========INSTALANDO E CONFIGURANDO GIT=========="
 ##Instalando Git
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt update && sudo apt install git
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt update && sudo apt install git -y
 git config --global user.name "Geazi Oliveira" && git config --global user.email "geazioliveira@hotmail.com"
 
 echo "==========CONFIGURANDO VSCODE=========="
@@ -160,7 +160,7 @@ cd ~/
 echo "============INSTALANDO ZSH============"
 ##Instalando Zsh
 cd /etc
-sudo apt install zsh
+sudo apt install zsh -y
 sudo sed -i 's+/geazi:/bin/bash+/geazi:/bin/zsh+g' passwd
 
 echo "===========REINICIANDO SISTEMA============"

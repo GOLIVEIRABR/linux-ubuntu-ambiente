@@ -2,7 +2,7 @@
 echo "==========INSTALANDO O NODE======="
 ##Instalação do Node
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt-get install -y nodejs -y
 node -v
 npm -v
 
@@ -15,7 +15,7 @@ echo "==========INSTALANDO YARN========"
 ##Instalação do Yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt update && sudo apt install yarn
+sudo apt update && sudo apt install yarn -y
 yarn -v
 
 echo "=========INSTALANDO CLI DO REACT APP======"
@@ -24,9 +24,9 @@ sudo yarn global add create-react-app
 
 echo "=========INSTALANDO DOCKER============"
 ##Instalação do Docker
-sudo apt update
+sudo apt update -y
 sudo apt remove docker docker-engine docker.io
-sudo apt install docker.io
+sudo apt install docker.io -y
 
 sudo systemctl start docker
 sudo systemctl enable docker
@@ -35,14 +35,14 @@ sudo docker version
 
 echo "========INSTALANDO JDK 8=========="
 ##Instalação do JDK 8 (pasta padrão)
-sudo add-apt-repository ppa:openjdk-r/ppa
-sudo apt-get update
-sudo apt-get install openjdk-8-jdk
+sudo add-apt-repository ppa:openjdk-r/ppa -y
+sudo apt-get update -y
+sudo apt-get install openjdk-8-jdk -y
 java -version
 
 echo "==========INSTALANDO LIBS GRAFICAS========="
 ##Instalação de Libs Gráficas
-sudo apt-get install gcc-multilib lib32z1 lib32stdc++6 libcanberra-gtk-module
+sudo apt-get install gcc-multilib lib32z1 lib32stdc++6 libcanberra-gtk-module -y
 
 echo "=========PREPARANDO ANDROID STUDIO=========="
 ##Preparativos para Android Studio
