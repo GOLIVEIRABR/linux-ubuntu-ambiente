@@ -144,7 +144,7 @@ echo '{
     }    
     }
     }' >> settings.json
-cd ~/Documentos
+cd ~/Downloads
 
 echo 'Instalar as seguintes extensões no VSCODE:
 
