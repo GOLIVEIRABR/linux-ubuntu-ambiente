@@ -47,8 +47,8 @@ echo "===========INSTALANDO WINE==========="
 ##Instalando Wine
 sudo dpkg --add-architecture i386
 wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
-sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
-sudo apt install --install-recommends winehq-stable 
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' -y
+sudo apt install --install-recommends winehq-stable -y
 
 echo "========INSTALANDO E CONFIGURANDO GIT=========="
 ##Instalando Git
@@ -248,7 +248,7 @@ Atenção: O Arquivo de configuração foi criado com as configurações padrão
 fi
 
 echo '
-Instalar as seguintes extensões:
+Instalar manualmente as seguintes extensões no VSCODE:
 - Dracula Official;
 - EditorConfig for VS Code;
 - ESLint;
