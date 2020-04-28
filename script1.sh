@@ -61,6 +61,104 @@ echo "==========CONFIGURANDO VSCODE=========="
 ##Configurando o VSCode
 mkdir -p ~/.config/Code/User/
 cd ~/.config/Code/User/
+
+if [ -e "settings.json" ]
+then
+    tamanho=$(wc -c settings.json | awk '{print $1}')
+    if [ $tamanho -lt 10 ] 
+    then
+        echo '{
+
+        "workbench.colorTheme": "Dracula",
+        
+        "terminal.integrated.fontSize": 14,
+        
+        "workbench.iconTheme": "material-icon-theme",
+        
+        "workbench.startupEditor": "newUntitledFile",
+        
+        "editor.tabSize": 2,
+        
+        "editor.fontSize": 14,
+        
+        "editor.lineHeight": 21,
+        
+        "editor.fontFamily": "Fira Code",
+        
+        "editor.fontLigatures": true,
+        
+        "explorer.compactFolders": false,
+        
+        "editor.renderLineHighlight": "gutter",
+        
+        "workbench.editor.labelFormat": "short",
+        
+        "extensions.ignoreRecommendations": true,
+        
+        "javascript.updateImportsOnFileMove.enabled": "never",
+        
+        "typescript.updateImportsOnFileMove.enabled": "never",
+        
+        "breadcrumbs.enabled": true,
+        
+        "editor.parameterHints.enabled": true,
+        
+        "explorer.confirmDragAndDrop": false,
+        
+        "explorer.confirmDelete": false,
+        
+        "editor.rulers": [ 80, 120],
+        
+        "emmet.syntaxProfiles":{ "javascript": "jsx"},
+        
+        "emmet.includeLanguages": { "javascript": "javascriptreact"},
+        
+        "[javascript]": {
+        
+        "editor.codeActionsOnSave": {
+        
+        "source.fixAll.eslint" : true,
+        }
+        },
+        
+        "[javascriptreact]": {
+        
+        "editor.codeActionsOnSave": {
+        
+        "source.fixAll.eslint": true,
+        
+        }
+        
+        },
+        
+        "[typescript]": {
+        
+        "editor.codeActionsOnSave": {
+        
+        "source.fixAll.eslint": true,
+        
+        }
+        
+        },
+        
+        "[typescriptreact]": {
+        
+        "editor.codeActionsOnSave": {
+        
+        "source.fixAll.eslint": true,
+        
+        }    
+        }
+        }' > settings.json
+        cd ~/Downloads
+        echo '===========VSCODE===========
+Atenção: O arquivo de configuração do VS Code já existia, mas como não possuia configurações relevantes, foi sobrescrito com as configurações padrão.' > Leia-ME.txt
+    else
+        cd ~/Downloads
+        echo '===========VSCODE===========
+Atenção: O arquivo de configuração do VS Code já possuia parâmetros relevantes. Nenhum parâmetro foi substituído.' > Leia-ME.txt
+    fi
+else
 echo '{
 
     "workbench.colorTheme": "Dracula",
@@ -143,16 +241,19 @@ echo '{
     
     }    
     }
-    }' >> settings.json
-cd ~/Downloads
+    }' > settings.json
+    cd ~/Downloads
+    echo '===========VSCODE===========:
+Atenção: O Arquivo de configuração foi criado com as configurações padrão.' > Leia-ME.txt
+fi
 
-echo 'Instalar as seguintes extensões no VSCODE:
-
-- Dracula Official
-- EditorConfig for VS Code
-- ESLint
-- Material Icon Theme
-- vscode-styled-components' >> Leiam-ME.txt
+echo '
+Instalar as seguintes extensões:
+- Dracula Official;
+- EditorConfig for VS Code;
+- ESLint;
+- Material Icon Theme;
+- vscode-styled-components.' >> Leia-ME.txt
 
 cd ~/
 
