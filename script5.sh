@@ -9,7 +9,7 @@ npm -v
 echo "==========INSTALANDO NVM========"
 ##Instalação do NVM
 sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-sudo sed -i '1 i\export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"\n[ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" # This loads nvm' ~/.zshrc
+sudo sed -i '1 i\export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"\n[ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" # This loads nvm\n' ~/.zshrc
 
 echo "==========INSTALANDO YARN========"
 ##Instalação do Yarn
@@ -56,6 +56,6 @@ cd Downloads
 wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/3.6.3.0/android-studio-ide-192.6392135-linux.tar.gz
 tar -xvzf android-studio-ide-192.6392135-linux.tar.gz -C ~/
 cd ~/
-sudo sed -i '1 i\export PATH=$PATH:~/android-studio/bin' .zshrc
+sudo sed -i '1 i\export PATH=$PATH:~/android-studio/bin\n' .zshrc
 
 echo "=======EXECUÇÃO TERMINADA, INICIE A CONFIGURAÇÃO MANUAL DO ANDROID STUDIO========"
