@@ -10,7 +10,7 @@ sudo apt install fonts-firacode
 
 echo "=========INSTALANDO TEMA SPACESHIP NO ZSH==========="
 ##Instalando tema SpaceShip no Oh My ZSH
-sudo git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 echo "==================CRIANDO LINK PARA O TEMA"
 sudo ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 echo "====================LINK CRIADO============"
