@@ -260,9 +260,10 @@ cd ~/
 
 echo "============INSTALANDO ZSH============"
 ##Instalando Zsh
+paramzsh=s+/$USER:/bin/bash+/$USER:/bin/zsh+g
 cd /etc
 sudo apt install zsh -y
-sudo sed -i 's+/geazi:/bin/bash+/geazi:/bin/zsh+g' passwd
+sudo sed -i $paramzsh /etc/passwd
 
 echo "===========REINICIANDO SISTEMA============"
 ##Reiniciando o Sistema

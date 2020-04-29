@@ -1,5 +1,6 @@
 #!/bin/bash
-ZSH_CUSTOM="/home/geazi/.oh-my-zsh/custom"
+ZSH_CUSTOM="/home/$USER/.oh-my-zsh/custom"
+echo $ZSH_CUSTOM
 echo "=========INSTALANDO DRACULA PARA TERMINAL========"
 ##Instalando Drácula para terminal
 sudo apt-get install dconf-cli -y
