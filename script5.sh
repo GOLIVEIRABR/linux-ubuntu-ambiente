@@ -59,8 +59,9 @@ tar -xvzf android-studio-ide-192.6392135-linux.tar.gz -C ~/
 cd ~/
 sudo sed -i '1 i\export PATH=$PATH:~/android-studio/bin\n' ~/.zshrc
 
-echo "=======EXECUÇÃO TERMINADA, INICIE A CONFIGURAÇÃO MANUAL DO ANDROID STUDIO, Para isso siga as instruções adicionadas ao arquivo Leia-me.txt na pasta de downloads========"
+echo "=======EXECUÇÃO TERMINADA, INICIE A CONFIGURAÇÃO MANUAL DO ANDROID STUDIO. Para isso, siga as instruções adicionadas ao arquivo Leia-me.txt na pasta de downloads========"
 echo '
+============ANDROID STUDIO===============:
 Inicie um novo terminal, digite studio.sh e siga as instruções do link abaixo:
 https://react-native.rocketseat.dev/android/linux#configurando-android-studio
-' >> Leia-ME.txt
+' >> ~/Downloads/Leia-ME.txt
