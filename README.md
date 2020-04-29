@@ -30,7 +30,7 @@ Os scripts acima servem para automatizar parte da configuração do ambiente de 
 
 **Configura:**
 
- - Após instalar o git com o seu nome de usuário e email;
+ - Após instalar o git, o configura com o seu nome de usuário e email;
  - Configura o VS Code com configurações padrão, mas se você já possuir um arquivo
    de configuração do VS Code ele não será alterado;
  - Configura o Zsh como terminal padrão para o seu usuário;
@@ -38,15 +38,18 @@ Os scripts acima servem para automatizar parte da configuração do ambiente de 
  - Reinicia a máquina (para garantir que a configuração do Zsh tenha efeito).
 
 **Script2:**
+
 Instala o Oh My Zsh.
 
 **Script3:**
+
  - Instala o tema Dŕacula para o terminal;
  - Instala a fonte Firacode;
  - Instala e configura o tema SpaceShip para o Zsh;
  - Instala Plugins básicos para o Zsh.
 
 **Script4:**
+
 Instala Plugins adicionais para o Zsh.
 
 **Script5:**
@@ -65,9 +68,11 @@ Instala Plugins adicionais para o Zsh.
  - Por fim, mostra as intruções que ainda faltam.
 
 **Script6 (Opcional)**
+
 A execução deste script é opcional. Sua função é instalar o recurso KVM para ajudar na emulação de disposivos android configurados no Android Studio. Este script só deve ser executado se for informado durante a configuração manual do Android Studio que o seu computador é compatível.
 
 ## Sequência de utilização
+
 Nos testes, os scripts foram executados de acordo com a sequência abaixo:
 ```mermaid
 graph LR
