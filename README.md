@@ -63,24 +63,31 @@ Instala Plugins adicionais para o Zsh.
  - Instala as Libs gráficas para o Android Studio;
  - Configura as variáveis de ambiente utilizadas pelo Android Studio no terminal;
  - Baixa e extrai o Android Studio na pasta padrão ~/;
- - Configura variável de ambiente do Android Studio no terminal (studio.sh);
+ - Configura variável de ambiente do Android Studio no terminal (o comando studio.sh já estará disponível na próxima vez que o terminal for aberto);
  - Exclui a pasta ~/Downloads/Programas (Esta pasta é criada pelos cripts de maneira temporária para armazenar os programas .db e o arquivo de instalação do Android Studio);
- - Por fim, mostra as intruções a respeito das configurações manuais que ainda faltam.
+ - Por fim, mostra as instruções a respeito das configurações manuais que ainda faltam.
 
 **Script6 (Opcional)**
 
 A execução deste script é opcional. Sua função é instalar o recurso KVM para ajudar na emulação de disposivos android configurados no Android Studio. Este script só deve ser executado se for informado durante a configuração manual do Android Studio que o seu computador é compatível.
 
 ## Sequência de utilização
-
 Nos testes, os scripts foram executados de acordo com a sequência abaixo:
+**script1, script2, script3,, script4, script5, script6.** 
+>É Importante que após a execução de cada script o terminal seja fechado para que ocorra a atualização de algumas configurações, como por exemplo, variáveis de ambiente:
 ```mermaid
 graph LR
 
-A(script1.sh) --> B(script2.sh)
-B --> K(Fechar terminal)
+J(Abrir terminal) --> A
+A(script1.sh) --> J(Abrir terminal)
+J --> B(script2.sh)
+B --> K(Fechar e abrir terminal)
 K --> C(script3.sh)
+C --> K
 K --> D(script4.sh)
-K --> E(script5.sh)
+D --> K
+K --> E(script5sh)
+E --> K
 K --> F(script6.sh)
+F --> K
 
