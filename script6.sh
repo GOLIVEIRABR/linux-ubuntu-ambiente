@@ -6,6 +6,6 @@ sudo adduser $USER kvm
 echo 'Se o resultado apresentado abaixo for semelhante a 
 Resultado:
 kvm:x:NUMERO_QUALQUER:SEU_USUARIO
-significa que o recurso foi instalado corretamente.'
+significa que o recurso foi instalado corretamente. Confira abaixo:'
 echo 'Resultado:'
 grep kvm /etc/group

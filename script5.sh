@@ -76,7 +76,7 @@ Se este script rodou sem erros, os únicos requisitos necessários para
 seguir as instruções do link acima são:
 1 - Fechar este terminal e abrir um novo;
 2 - Digitar o comando studio.sh (Este comando fará com que o programa de
-configuração seja do Android Studio seja inicializado).
+configuração do Android Studio seja inicializado).
 
 Pronto! a partir disso você já estará apto a executar as instruçẽos 
 do link acima. 
@@ -101,7 +101,7 @@ Se este script rodou sem erros, os únicos requisitos necessários para
 seguir as instruções do link acima são:
 1 - Fechar este terminal e abrir um novo;
 2 - Digitar o comando studio.sh (Este comando fará com que o programa de
-configuração seja do Android Studio seja inicializado).
+configuração do Android Studio seja inicializado).
 
 Pronto! a partir disso você já estará apto a executar as instruçẽos 
 do link acima. 
