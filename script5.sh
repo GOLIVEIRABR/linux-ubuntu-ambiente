@@ -47,7 +47,8 @@ sudo apt-get install gcc-multilib lib32z1 lib32stdc++6 libcanberra-gtk-module -y
 echo "=========PREPARANDO ANDROID STUDIO=========="
 ##Preparativos para Android Studio
 mkdir -p ~/Android/Sdk
-sudo sed -i '1 i\export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64\nexport ANDROID_HOME=~/Android/Sdk\nexport PATH=$PATH:$ANDROID_HOME/emulator\nexport PATH=$PATH:$ANDROID_HOME/tools\nexport PATH=$PATH:$ANDROID_HOME/tools/bin\nexport PATH=$PATH:$ANDROID_HOME/platform-tools\n' .zshrc
+cd ~/
+sudo sed -i '1 i\export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64\nexport ANDROID_HOME=~/Android/Sdk\nexport PATH=$PATH:$ANDROID_HOME/emulator\nexport PATH=$PATH:$ANDROID_HOME/tools\nexport PATH=$PATH:$ANDROID_HOME/tools/bin\nexport PATH=$PATH:$ANDROID_HOME/platform-tools\n' ~/.zshrc
 
 echo "=========INSTALANDO ANDROID STUDIO========="
 ##Instalando Android Studio
@@ -56,6 +57,10 @@ cd Downloads
 wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/3.6.3.0/android-studio-ide-192.6392135-linux.tar.gz
 tar -xvzf android-studio-ide-192.6392135-linux.tar.gz -C ~/
 cd ~/
-sudo sed -i '1 i\export PATH=$PATH:~/android-studio/bin\n' .zshrc
+sudo sed -i '1 i\export PATH=$PATH:~/android-studio/bin\n' ~/.zshrc
 
-echo "=======EXECUÇÃO TERMINADA, INICIE A CONFIGURAÇÃO MANUAL DO ANDROID STUDIO========"
+echo "=======EXECUÇÃO TERMINADA, INICIE A CONFIGURAÇÃO MANUAL DO ANDROID STUDIO, Para isso siga as instruções adicionadas ao arquivo Leia-me.txt na pasta de downloads========"
+echo '
+Inicie um novo terminal, digite studio.sh e siga as instruções do link abaixo:
+https://react-native.rocketseat.dev/android/linux#configurando-android-studio
+' >> Leia-ME.txt
