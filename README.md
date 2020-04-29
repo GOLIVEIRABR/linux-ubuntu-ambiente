@@ -78,7 +78,7 @@ Nos testes, os scripts foram executados de acordo com a sequência abaixo:
 graph LR
 
 A(script1.sh) --> B(script2.sh)
-B --> C(script3.sh)
+B --> K(Fechar terminal)--> C(script3.sh)
 C --> D(script4.sh)
 D --> E(script5.sh)
 E --> F(script6.sh)
