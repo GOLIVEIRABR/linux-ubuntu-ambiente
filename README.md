@@ -1,6 +1,6 @@
 # Configuração automatizada de sistema!
 
-Os scripts acima servem para automatizar parte da configuração do ambiente de desenvolvimento baseado em node.js, react e react js native. Eles também instalam alguns programas de uso comum.  Eles foram criados por mim para uso pessoal, mas estou compartilhando, caso alguém tenha a mesma necessidade minha, ou mesmo, queira aperfeiçoá-los (não sou especialista em shell script, estou ciente que muita coisa pode ser melhorada)...
+Os scripts acima servem para automatizar parte da configuração do ambiente de desenvolvimento baseado em node.js,react js e react native. Eles também instalam alguns programas de uso comum.  Eles foram criados por mim para uso pessoal, mas estou compartilhando, caso alguém tenha a mesma necessidade minha, ou mesmo, queira aperfeiçoá-los (não sou especialista em shell script, estou ciente que muita coisa pode ser melhorada)...
 
 > **Observação:** Os testes foram efetuados no Ubuntu Desktop 18.04 LTS e 20.04 LTS. Em ambos os casos não ocorreu nenhum tipo de problema.
 
