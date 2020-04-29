@@ -1,3 +1,4 @@
+
 # Configuração automatizada de sistema!
 
 Os scripts acima servem para automatizar parte da configuração do ambiente de desenvolvimento baseado em node.js, react js e react native. Eles também instalam alguns programas de uso comum.  Eles foram criados por mim para uso pessoal, mas estou compartilhando, caso alguém tenha a mesma necessidade minha, ou mesmo, queira aperfeiçoá-los (não sou especialista em shell script, mas estou ciente que muita coisa pode ser melhorada)...
@@ -75,9 +76,10 @@ A execução deste script é opcional. Sua função é instalar o recurso KVM pa
 Nos testes, os scripts foram executados de acordo com a sequência abaixo:
 **script1, script2, script3,, script4, script5, script6.** 
 >É Importante que após a execução de cada script o terminal seja fechado para que ocorra a atualização de algumas configurações, como por exemplo, variáveis de ambiente:
-```mermaid
-graph LR
 
+
+`mermaid
+graph LR
 J(Abrir terminal) --> A
 A(script1.sh) --> J(Abrir terminal)
 J --> B(script2.sh)
