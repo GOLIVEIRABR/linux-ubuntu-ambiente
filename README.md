@@ -77,6 +77,24 @@ Nos testes, os scripts foram executados de acordo com a sequência abaixo:
 **script1, script2, script3,, script4, script5, script6.** 
 >É Importante que após a execução de cada script o terminal seja fechado para que ocorra a atualização de algumas configurações, como por exemplo, variáveis de ambiente:
 
+## UML diagrams
+
+You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
+
+```mermaid
+sequenceDiagram
+Alice ->> Bob: Hello Bob, how are you?
+Bob-->>John: How about you John?
+Bob--x Alice: I am good thanks!
+Bob-x John: I am good thanks!
+Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+Bob-->Alice: Checking with John...
+Alice->John: Yes... John, how are you?
+```
+
+And this will produce a flow chart:
+
 ```mermaid
 graph LR
 A[Square Rect] -- Link text --> B((Circle))
@@ -84,24 +102,5 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 ```
-
-
-```mermaid
-graph LR
-
-J --> B(script2.sh)
-B --> K(Fechar e abrir terminal)
-K --> C(script3.sh)
-C --> K
-K --> D(script4.sh)
-D --> K
-K --> E(script5sh)
-E --> K
-K --> F(script6.sh)
-F --> K
-K --> E(script5sh)
-E --> K
-K --> F(script6.sh)
-F --> K
 
 
