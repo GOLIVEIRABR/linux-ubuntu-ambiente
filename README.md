@@ -77,6 +77,14 @@ Nos testes, os scripts foram executados de acordo com a sequência abaixo:
 **script1, script2, script3,, script4, script5, script6.** 
 >É Importante que após a execução de cada script o terminal seja fechado para que ocorra a atualização de algumas configurações, como por exemplo, variáveis de ambiente:
 
+```mermaid
+graph LR
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
+```
+
 
 ```mermaid
 graph LR
