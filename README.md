@@ -78,10 +78,10 @@ Nos testes, os scripts foram executados de acordo com a sequência abaixo:
 >É Importante que após a execução de cada script o terminal seja fechado para que ocorra a atualização de algumas configurações, como por exemplo, variáveis de ambiente:
 
 
-`mermaid
+```mermaid
 graph LR
 J(Abrir terminal) --> A
-A(script1.sh) --> J(Abrir terminal)
+A(script1.sh) --> J
 J --> B(script2.sh)
 B --> K(Fechar e abrir terminal)
 K --> C(script3.sh)
@@ -92,4 +92,5 @@ K --> E(script5sh)
 E --> K
 K --> F(script6.sh)
 F --> K
+
 
