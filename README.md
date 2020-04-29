@@ -2,7 +2,7 @@
 
 Os scripts acima servem para automatizar parte da configuração do ambiente de desenvolvimento baseado em node.js, react js e react native. Eles também instalam alguns programas de uso comum.  Eles foram criados por mim para uso pessoal, mas estou compartilhando, caso alguém tenha a mesma necessidade minha, ou mesmo, queira aperfeiçoá-los (não sou especialista em shell script, mas estou ciente que muita coisa pode ser melhorada)...
 
-> **Observação:** Os testes foram efetuados no Ubuntu Desktop 18.04 LTS e 20.04 LTS. Em ambos os casos não ocorreu nenhum tipo de problema.
+> **Observação:** os testes foram efetuados no Ubuntu Desktop 18.04 LTS e 20.04 LTS. Em ambos os casos não ocorreu nenhum tipo de problema.
 
 ## Requisitos
 
@@ -72,6 +72,8 @@ Instala Plugins adicionais para o Zsh.
 A execução deste script é opcional. Sua função é instalar o recurso KVM para ajudar na emulação de disposivos android configurados no Android Studio. Este script só deve ser executado se for informado durante a configuração manual do Android Studio que o seu computador é compatível.
 
 ## Sequência de utilização
-Nos testes, os scripts foram executados de acordo com a sequência abaixo:
+Nos testes, os scripts foram executados de acordo com a seguinte sequência:
 **script1, script2, script3,, script4, script5, script6.** 
->É Importante que após a execução de cada script o terminal seja fechado para que ocorra a atualização de algumas configurações, como por exemplo, variáveis de ambiente.
+>**Observação**: é Importante que após a execução de cada script o terminal seja fechado para que ocorra a atualização de algumas configurações, como por exemplo, variáveis de ambiente.
+
+Faça bom uso!
