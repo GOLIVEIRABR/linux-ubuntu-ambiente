@@ -12,7 +12,7 @@ Os scripts acima servem para automatizar parte da configuração do ambiente de 
 ## O que os scripts fazem?
 **Script1:** 
 **Instala:** 
- - cURL;
+ - cURL (apt);
  - VS Code (snap);
  - Insomnia (snap);
  - DBeaver (snap);
