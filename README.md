@@ -1,143 +1,81 @@
-# Welcome to StackEdit!
+mermaidAPI.initialize({
+    securityLevel: 'loose'
+});
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+# Configuração automatizada de sistema!
 
+Os scripts acima servem para automatizar parte da configuração do ambiente de desenvolvimento baseado em node.js, react js e react native. Eles também instalam alguns programas de uso comum.  Eles foram criados por mim para uso pessoal, mas estou compartilhando, caso alguém tenha a mesma necessidade minha, ou mesmo, queira aperfeiçoá-los (não sou especialista em shell script, mas estou ciente que muita coisa pode ser melhorada)...
 
-# Files
+> **Observação:** Os testes foram efetuados no Ubuntu Desktop 18.04 LTS e 20.04 LTS. Em ambos os casos não ocorreu nenhum tipo de problema.
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+## Requisitos
 
-## Create files and folders
+ - Ubuntu Desktop 18.04 LTS ou 20.04 LTS (Até agora os testes utilizando os scripts foram feitos somente nestas versões), mas é possível que funcionem em outras versões a partir do 18.04 LTS;
+ - Os Scripts foram testados em um sistema limpo, recém instalado (instalação completa com todas as aplicações e pacotes nativos em vez da instalação mínima). Os impactos em sistemas já configurados ainda não foram mensurados. Utilize com cuidado.
+ - Você ****DEVE ALTERAR** a linha 53** do script1 inserindo o seu nome e o seu email, pois esta linha configura os seus dados do GitHub para que você possa utilizar o Git.
+## O que os scripts fazem?
+**Script1:** 
+**Instala:** 
+ - cURL (apt);
+ - VS Code (snap);
+ - Insomnia (snap);
+ - DBeaver (snap);
+ - Discord (snap);
+ - Spotify (snap);
+ - Gimp (snap);
+ - Google Chrome (.deb);
+ - DevDocs (.deb);
+ - Steam (.deb - por que não? rsrs);
+ - Deepin Screenshot (apt);
+ - Peek (apt);
+ - Wine (apt);
+ - Git (apt);
+ - Zsh (apt).
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+**Configura:**
 
-## Switch to another file
+ - Após instalar o git, o configura com o seu nome de usuário e email;
+ - Configura o VS Code com configurações padrão, mas se você já possuir um arquivo
+   de configuração do VS Code ele não será alterado;
+ - Configura o Zsh como terminal padrão para o seu usuário;
+ - Gera um arquivo leia-ME.txt na pasta Downloads com instruções das configurações que ainda restam fazer (extensões a serem instaladas no VS Code);
+ - Reinicia a máquina (para garantir que a configuração do Zsh tenha efeito).
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+**Script2:**
 
-## Rename a file
+Instala o Oh My Zsh.
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+**Script3:**
 
-## Delete a file
+ - Instala o tema Dŕacula para o terminal;
+ - Instala a fonte Firacode;
+ - Instala e configura o tema SpaceShip para o Zsh;
+ - Instala Plugins básicos para o Zsh.
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+**Script4:**
 
-## Export a file
+Instala Plugins adicionais para o Zsh.
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+**Script5:**
 
+ - Instala o Node (versão estável);
+ - Instala o NVM;
+ - Instala o Yarn;
+ - Instala CLI do React APP;
+ - Instala o Docker (configura para inicializar automaticamente);
+ - Instala JDK 8 no diretório padrão;
+ - Instala as Libs gráficas para o Android Studio;
+ - Configura as variáveis de ambiente utilizadas pelo Android Studio no terminal;
+ - Baixa e extrai o Android Studio na pasta padrão ~/;
+ - Configura variável de ambiente do Android Studio no terminal (o comando studio.sh já estará disponível na próxima vez que o terminal for aberto);
+ - Exclui a pasta ~/Downloads/Programas (Esta pasta é criada pelos cripts de maneira temporária para armazenar os programas .db e o arquivo de instalação do Android Studio);
+ - Por fim, mostra as instruções a respeito das configurações manuais que ainda faltam.
 
-# Synchronization
+**Script6 (Opcional)**
 
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
+A execução deste script é opcional. Sua função é instalar o recurso KVM para ajudar na emulação de disposivos android configurados no Android Studio. Este script só deve ser executado se for informado durante a configuração manual do Android Studio que o seu computador é compatível.
 
-There are two types of synchronization and they can complement each other:
-
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
-
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
-
-## Open a file
-
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
-
-## Save a file
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-## Synchronize a file
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-
-# Publication
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-## Publish a File
-
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
-
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
-
-
-# Markdown extensions
-
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
-
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
-
-
-## SmartyPants
-
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
-
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
-
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+## Sequência de utilização
+Nos testes, os scripts foram executados de acordo com a sequência abaixo:
+**script1, script2, script3,, script4, script5, script6.** 
+>É Importante que após a execução de cada script o terminal seja fechado para que ocorra a atualização de algumas configurações, como por exemplo, variáveis de ambiente.
