@@ -61,7 +61,7 @@ sudo sed -i '1 i\export PATH=$PATH:~/android-studio/bin\n' ~/.zshrc
 
 cd ~/
 cd Downloads
-rm -r Programascd 
+rm -r Programas 
 cd ~/
 
 echo '=======EXECUÇÃO DO SCRIPT TERMINADA========
