@@ -1,7 +1,3 @@
-mermaidAPI.initialize({
-    securityLevel: 'loose'
-});
-
 # Configuração automatizada de sistema!
 
 Os scripts acima servem para automatizar parte da configuração do ambiente de desenvolvimento baseado em node.js, react js e react native. Eles também instalam alguns programas de uso comum.  Eles foram criados por mim para uso pessoal, mas estou compartilhando, caso alguém tenha a mesma necessidade minha, ou mesmo, queira aperfeiçoá-los (não sou especialista em shell script, mas estou ciente que muita coisa pode ser melhorada)...
