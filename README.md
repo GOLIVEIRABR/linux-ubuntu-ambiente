@@ -63,9 +63,9 @@ Instala Plugins adicionais para o Zsh.
  - Instala as Libs gráficas para o Android Studio;
  - Configura as variáveis de ambiente utilizadas pelo Android Studio no terminal;
  - Baixa e extrai o Android Studio na pasta padrão ~/;
- - Configura variável de ambiente do Android Studio no terminal (studio.sh)
- - Exclui todos os programas .deb baixados para a pasta ~/Downloads/Programas (Esta pasta é criada pelos cripts de maneira temporária).
- - Por fim, mostra as intruções que ainda faltam.
+ - Configura variável de ambiente do Android Studio no terminal (studio.sh);
+ - Exclui a pasta ~/Downloads/Programas (Esta pasta é criada pelos cripts de maneira temporária para armazenar os programas .db e o arquivo de instalação do Android Studio);
+ - Por fim, mostra as intruções a respeito das configurações manuais que ainda faltam.
 
 **Script6 (Opcional)**
 
