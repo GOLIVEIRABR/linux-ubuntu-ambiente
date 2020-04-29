@@ -59,6 +59,11 @@ tar -xvzf android-studio-ide-192.6392135-linux.tar.gz -C ~/
 cd ~/
 sudo sed -i '1 i\export PATH=$PATH:~/android-studio/bin\n' ~/.zshrc
 
+cd ~/
+cd Downloads
+rm -r Programascd 
+cd ~/
+
 echo '=======EXECUÇÃO DO SCRIPT TERMINADA========
 
 Agora deverá ser iniciada a configuração manual do Android Studio.
