@@ -22,7 +22,7 @@ cd /home/$USER/Downloads/Programas
 
 echo "========BAIXANDO TEMA DRÁCULA PARA INSOMNIA======="
 wget https://github.com/dracula/insomnia/archive/master.zip
-unzip insomnia-master.zip -d /home/$USER/snap/insomnia/62/.config/Insomnia/plugins
+unzip master.zip -d /home/$USER/snap/insomnia/62/.config/Insomnia/plugins
 
 
 echo "==========BAIXANDO .DEBS========"
