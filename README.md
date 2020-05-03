@@ -71,9 +71,14 @@ Instala Plugins adicionais para o Zsh.
 
 A execução deste script é opcional. Sua função é instalar o recurso KVM para ajudar na emulação de disposivos android configurados no Android Studio. Este script só deve ser executado se for informado durante a configuração manual do Android Studio que o seu computador é compatível.
 
+**Script7**
+
+Baixa o tema drácula para o Insomnia. Antes de rodar o script é necessário abrir o Insomnia para que ele crie a pasta onde será armazenado o tema.
+
 ## Sequência de utilização
 Nos testes, os scripts foram executados de acordo com a seguinte sequência:
-**script1, script2, script3,, script4, script5, script6.** 
+**script1, script2, script3,, script4, script5, script6., script7**
+ 
 >**Observação**: é Importante que após a execução de cada script o terminal seja fechado para que ocorra a atualização de algumas configurações, como por exemplo, variáveis de ambiente.
 
 Faça bom uso!
