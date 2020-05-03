@@ -20,6 +20,11 @@ sudo snap install gimp --classic
 mkdir /home/$USER/Downloads/Programas
 cd /home/$USER/Downloads/Programas
 
+echo "========BAIXANDO TEMA DRÁCULA PARA INSOMNIA======="
+wget https://github.com/dracula/insomnia/archive/master.zip
+unzip insomnia-master.zip -d /home/$USER/snap/insomnia/62/.config/Insomnia/plugins
+
+
 echo "==========BAIXANDO .DEBS========"
 ##Baixando .debs
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -77,7 +82,7 @@ then
         
         "editor.fontSize": 14,
         
-        "editor.lineHeight": 21,
+        "editor.lineHeight": 19,
         
         "editor.fontFamily": "Fira Code",
         
@@ -169,7 +174,7 @@ echo '{
     
     "editor.fontSize": 14,
     
-    "editor.lineHeight": 21,
+    "editor.lineHeight": 19,
     
     "editor.fontFamily": "Fira Code",
     
