@@ -15,7 +15,8 @@ sudo snap install dbeaver-ce --classic
 sudo snap install discord --classic
 sudo snap install spotify --classic
 sudo snap install gimp --classic
-
+sudo snap install telegram-desktop --classic
+sudo snap install slack --classic
 
 mkdir /home/$USER/Downloads/Programas
 cd /home/$USER/Downloads/Programas
