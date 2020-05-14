@@ -18,6 +18,7 @@ sudo snap install gimp --classic
 sudo snap install telegram-desktop --classic
 sudo snap install slack --classic
 
+
 mkdir /home/$USER/Downloads/Programas
 cd /home/$USER/Downloads/Programas
 
@@ -31,7 +32,7 @@ echo "=========INSTALANDO .DEBS========"
 ##Instalando .debs
 sudo dpkg -i *.deb
 
-echo "===========INSTALANDO APT-GET========"
+echo "===========INSTALANDO VIA APT-GET========"
 ##Instalando Via apt-get
 sudo apt-get update -y
 sudo apt-get install deepin-screenshot -y
@@ -40,6 +41,9 @@ sudo add-apt-repository ppa:peek-developers/stable -y
 sudo apt update -y
 sudo apt-get install peek -y
 
+sudo apt-get install icedtea-netx -y
+
+sudo apt-get install gnome-tweaks -y
 echo "===========INSTALANDO WINE==========="
 ##Instalando Wine
 sudo dpkg --add-architecture i386

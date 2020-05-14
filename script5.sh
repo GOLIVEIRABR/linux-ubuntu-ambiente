@@ -49,6 +49,8 @@ echo "=========PREPARANDO ANDROID STUDIO=========="
 mkdir -p ~/Android/Sdk
 cd ~/
 sudo sed -i '1 i\export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64\nexport ANDROID_HOME=~/Android/Sdk\nexport PATH=$PATH:$ANDROID_HOME/emulator\nexport PATH=$PATH:$ANDROID_HOME/tools\nexport PATH=$PATH:$ANDROID_HOME/tools/bin\nexport PATH=$PATH:$ANDROID_HOME/platform-tools\n' ~/.zshrc
+sudo sed -i '$ a\JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' /etc/environment
+
 
 echo "=========INSTALANDO ANDROID STUDIO========="
 ##Instalando Android Studio
